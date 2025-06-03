@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco - Lifetronik Medical</title>
+    <link rel="stylesheet" href="falepg_lifetronik.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="../pagina_inicial/iniciopg_lifetronik.html">
+                    <img src="../pagina_inicial/iniciopg_imagenslm/Logo_em_linha.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <nav class="nav-container">
+                <ul class="nav-list">
+                    <li><a href="../sobre_nos/sobrepg_lifetronik.html">Sobre Nós</a></li>
+                    <li><a href="../produtos/produtospg_lifetronik.html">Produtos</a></li>
+                    <li><a href="../nossas_condutas/condutaspg_lifetronik.html">Condutas</a></li>
+                    <li><a href="../fale_conosco/falepg_lifetronik.html" class="active">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section class="fale-conosco">
+            <div class="container">
+                <div class="fale-conosco-container">
+                    <div class="fale-conosco-info">
+                        <div class="fale-conosco-info-topo">
+                            <div class="fale-conosco-chapeu">Fale conosco</div>
+                            <h1 class="fale-conosco-titulo">Entre em contato!</h1>
+                            <p class="fale-conosco-descricao">
+                                Gostaria de falar conosco? Envie uma mensagem e, em breve, um de nossos consultores entrará em contato.
+                            </p>
+                        </div>
+                        <div class="fale-conosco-unidades">
+                            <h2 class="fale-conosco-subtitulo">Nossas Unidades</h2>
+                            <ul class="unidades-lista">
+                                <li>
+                                    <span class="icone-localizacao" aria-hidden="true">
+                                        <!-- Ícone pin Google Maps SVG -->
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="#b8312b" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
+                                            <path d="M12 2C7.03 2 3 6.03 3 11c0 5.25 7.11 11.39 7.41 11.64.36.3.82.3 1.18 0C13.89 22.39 21 16.25 21 11c0-4.97-4.03-9-9-9zm0 18.54C9.14 18.09 5 13.97 5 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 2.97-4.14 7.09-7 9.54z"/>
+                                            <circle cx="12" cy="11" r="3" fill="#b8312b"/>
+                                        </svg>
+                                    </span>
+                                    <span>Brasília, DF</span>
+                                </li>
+                                <li>
+                                    <span class="icone-localizacao" aria-hidden="true">
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="#b8312b" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
+                                            <path d="M12 2C7.03 2 3 6.03 3 11c0 5.25 7.11 11.39 7.41 11.64.36.3.82.3 1.18 0C13.89 22.39 21 16.25 21 11c0-4.97-4.03-9-9-9zm0 18.54C9.14 18.09 5 13.97 5 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 2.97-4.14 7.09-7 9.54z"/>
+                                            <circle cx="12" cy="11" r="3" fill="#b8312b"/>
+                                        </svg>
+                                    </span>
+                                    <span>São Paulo, SP</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fale-conosco-redes">
+                            <h2 class="fale-conosco-subtitulo">Redes Sociais</h2>
+                            <a href="#" class="linkedin-icon" aria-label="LinkedIn" target="_blank" style="display:inline-block;">
+                                <!-- Ícone LinkedIn SVG -->
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="#0077B5" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
+                                    <rect width="32" height="32" rx="6" fill="#fff"/>
+                                    <path d="M12.1 13.7h-3V24h3V13.7zM10.6 12.5c1 0 1.7-.7 1.7-1.6-.1-.9-.7-1.6-1.7-1.6s-1.7.7-1.7 1.6c0 .9.7 1.6 1.7 1.6zm4.3 11.5h3v-5.6c0-.3 0-.7.1-.9.2-.6.7-1.2 1.6-1.2 1.1 0 1.5.9 1.5 2.1V24h3v-5.7c0-3-1.6-4.4-3.7-4.4-1.7 0-2.4 1-2.8 1.7h.1v-1.5h-3c.1 1 .1 9.9.1 9.9z" fill="#0077B5"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Coluna direita: Formulário -->
+                    <div class="fale-conosco-form">
+                        <form action="process_form.php" method="POST">
+                            <div class="form-group">
+                                <label for="name">Nome:</label>
+                                <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Empresa:</label>
+                                <input type="text" id="company" name="company" placeholder="Digite o nome da sua empresa">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem:</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-enviar">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo-col">
+                <img src="../pagina_inicial/iniciopg_imagenslm/logo_lifetronik.jpg" alt="Logo Lifetronik" class="footer-logo-img" />
+            </div>
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <div class="footer-col-title">Sobre Nós</div>
+                    <ul>
+                        <li><a href="#">Quem Somos</a></li>
+                        <li><a href="#">Nosso Propósito</a></li>
+                        <li><a href="#">Nossas Pessoas</a></li>
+                        <li><a href="#">Onde Estamos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-title">Produtos</div>
+                    <ul>
+                        <li><a href="#">Biosensors</a></li>
+                        <li><a href="#">Cardinal Health</a></li>
+                        <li><a href="#">Health Line</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-title">Condutas</div>
+                    <ul>
+                        <li><a href="#">Código de Ética</a></li>
+                        <li><a href="#">Conduta LGPD</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-col-title">Fale Conosco</div>
+                    <ul>
+                        <li><a href="#">Entre em contato</a></li>
+                        <li><a href="#">Endereços</a></li>
+                        <li class="footer-social">
+                            <span>Redes Sociais:</span>
+                            <a href="#" class="linkedin-icon" aria-label="LinkedIn" target="_blank">
+                                <svg width="26" height="26" viewBox="0 0 32 32" fill="#0077B5" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
+                                    <rect width="32" height="32" rx="6" fill="#fff"/>
+                                    <path d="M12.1 13.7h-3V24h3V13.7zM10.6 12.5c1 0 1.7-.7 1.7-1.6-.1-.9-.7-1.6-1.7-1.6s-1.7.7-1.7 1.6c0 .9.7 1.6 1.7 1.6zm4.3 11.5h3v-5.6c0-.3 0-.7.1-.9.2-.6.7-1.2 1.6-1.2 1.1 0 1.5.9 1.5 2.1V24h3v-5.7c0-3-1.6-4.4-3.7-4.4-1.7 0-2.4 1-2.8 1.7h.1v-1.5h-3c.1 1 .1 9.9.1 9.9z" fill="#0077B5"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                © 2025 Lifetronik Medical. Todos os direitos reservados.
+            </div>
+            <div class="footer-bottom-right">
+                <a href="#">Termos de Uso</a>
+                <span>|</span>
+                <a href="#">Cookies</a>
+                <span>|</span>
+                <a href="#">Privacidade</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

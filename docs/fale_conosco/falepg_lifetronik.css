@@ -1,0 +1,192 @@
+/* Importa estilos do header/footer */
+@import url("../pagina_inicial/iniciopg_lifetronik.css");
+
+/* ===== FALE CONOSCO ===== */
+.fale-conosco {
+    background: #fff;
+    padding: 60px 0;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 6vw;
+}
+
+.fale-conosco-chapeu {
+    font-size: 18px;
+    color: #b8312b;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.fale-conosco-titulo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 8px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.fale-conosco-descricao {
+    font-size: 18px;
+    color: #222;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 16px;
+}
+
+.fale-conosco-container {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    margin-top: 32px;
+}
+
+/* Agrupa chapéu, título e descrição para alinhar ao lado do formulário */
+.fale-conosco-info {
+    flex: 1.2 1 0;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.fale-conosco-info-topo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px; /* Espaço menor abaixo do topo */
+}
+
+.fale-conosco-unidades,
+.fale-conosco-redes {
+    margin-bottom: 10px; /* Espaço menor entre seções */
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+.fale-conosco-subtitulo {
+    font-size: 17px;
+    color: #b8312b;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.unidades-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.unidades-lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #222;
+}
+
+.icone-localizacao {
+    display: flex;
+    align-items: center;
+}
+
+.fale-conosco-redes a.linkedin-icon {
+    display: inline-block;
+    margin-top: 4px;
+    transition: transform 0.2s;
+}
+
+.fale-conosco-redes a.linkedin-icon:hover {
+    transform: scale(1.08);
+}
+
+.fale-conosco-form {
+    flex: 1 1 320px;
+    min-width: 320px;
+    background: #f4f4f4;
+    padding: 32px 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(184,49,43,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #b8312b;
+    font-size: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: 'Raleway', Arial, sans-serif;
+    background: #fff;
+    resize: none;
+}
+
+.form-group textarea {
+    min-height: 100px;
+}
+
+.btn-enviar {
+    background-color: #b8312b;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.btn-enviar:hover {
+    background-color: #8A1F1A;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .fale-conosco-container {
+        flex-direction: column;
+        gap: 32px;
+        align-items: stretch;
+    }
+    .fale-conosco-form {
+        min-width: 0;
+    }
+    .fale-conosco-info {
+        min-width: 0;
+    }
+    .fale-conosco-info-topo {
+        margin-bottom: 0;
+    }
+}

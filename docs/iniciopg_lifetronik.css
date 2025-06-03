@@ -1,0 +1,525 @@
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* ===== HEADER ===== */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6vw 18px 6vw;
+    width: 100%;
+    background-color: #F3F3F3;
+    box-sizing: border-box;
+    gap: 32px; /* gap restaurado */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container .logo {
+    max-height: 48px;
+    cursor: pointer;
+    background: none;
+    border-radius: 0;
+    display: block;
+}
+
+.nav-container .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 32px; /* gap restaurado */
+}
+
+.nav-container .nav-list li {
+    margin: 0; 
+}
+
+.nav-container .nav-list li a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+    background: none;
+    padding: 4px 0;
+    display: inline-block;
+}
+
+.nav-container .nav-list li a:hover {
+    color: #b8312b;
+}
+
+/* ===== QUEM SOMOS ===== */
+.quem-somos {
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.quem-somos-onda-bg {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    padding: 0;
+}
+
+.onda-vermelha {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.quem-somos-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 6vw 60px 6vw;
+    min-height: 340px;
+    background: #fff;
+}
+
+.quem-somos-texto {
+    flex: 1.2;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.quem-somos-chapeu {
+    font-size: 18px;
+    color: #b8312b;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.quem-somos-titulo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 8px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.quem-somos-olho {
+    font-size: 18px;
+    color: #b8312b;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.quem-somos-descricao {
+    font-size: 16px;
+    color: #222;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 16px;
+}
+
+/* ===== BOTÃO SAIBA MAIS ===== */
+.btn-saiba-mais {
+    background-color: #b8312b;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    width: 180px;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #8A1F1A;
+}
+
+.quem-somos-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 220px;
+}
+
+.quem-somos-imagem img {
+    max-width: 540px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(184,49,43,0.08);
+    object-fit: cover;
+    background: #fff;
+}
+
+/* ===== PRODUTOS ===== */
+.produtos {
+    padding: 20px 20px;
+    background-color: #B8312B;
+    font-family: 'Raleway', sans-serif;
+}
+
+.produtos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 6vw;
+}
+
+.produtos-titulo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-veja-mais {
+    background-color: #737373;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    letter-spacing: 1px;
+}
+
+.btn-veja-mais:hover {
+    background-color: #505050;
+}
+
+/* ===== MARCAS PARCEIRAS ===== */
+.marcas-parceiras {
+    background: #F3F3F3;
+    padding: 56px 0 48px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.marcas-parceiras-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 6vw;
+    text-align: center;
+}
+
+.marcas-chapeu {
+    color: #b8312b;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.marcas-titulo {
+    color: #000;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 0 16px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.marcas-descricao {
+    color: #000;
+    font-size: 17px;
+    margin-bottom: 32px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.marcas-logos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+    flex-wrap: nowrap;
+    margin-top: 16px;
+    min-height: 60px;     /* Garante altura mínima igual à das logos */
+}
+
+.marca-logo {
+    max-width: 230px;
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== CONTATO ===== */
+.contato-section {
+    background: #fff;
+    color: #000;
+    padding: 56px 0;
+}
+
+.contato-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0 6vw;
+}
+
+.contato-img {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    justify-content: center;
+}
+
+.contato-img img {
+    max-width: 340px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    object-fit: cover;
+    background: #fff;
+}
+
+.contato-texto {
+    flex: 1.2;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-chapeu {
+    font-size: 18px;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contato-titulo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 8px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contato-descricao {
+    font-size: 16px;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 16px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    font-family: 'Raleway', Arial, sans-serif;
+    margin-top: 40px;
+    background: #818283;
+    padding: 0;
+}
+
+.footer-top {
+    display: flex;
+    align-items: flex-start;
+    background: #818283;
+    color: #fff;
+    padding: 40px 5vw 30px 5vw;
+}
+
+.footer-logo-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center; /* Centraliza verticalmente */
+    margin-right: 40px;
+    height: 100%; /* Garante que ocupe toda a altura do footer-top */
+}
+
+.footer-logo-img {
+    width: 240px;      /* Aumenta o tamanho do logo */
+    height: auto;
+    margin-bottom: 0;
+    background: none;
+    border-radius: 0;
+    display: block;
+}
+
+.footer-columns {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.footer-col {
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    font-size: 15px;
+    margin-bottom: 6px;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.footer-social {
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.footer-bottom {
+    background: #282728;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 5vw;
+    font-size: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom-left,
+.footer-bottom-right,
+.footer-bottom-right a,
+.footer-bottom-right span {
+    font-size: 15px;
+    color: #fff !important;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 1100px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-columns {
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer-col {
+        min-width: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .marcas-titulo {
+        font-size: 22px;
+    }
+    .marcas-chapeu {
+        font-size: 14px;
+    }
+    .marcas-descricao {
+        font-size: 15px;
+    }
+    .marca-logo {
+        max-width: 120px;
+        padding: 8px 10px;
+    }
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-links-group {
+        min-width: 0;
+    }
+    .footer-logo {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .termo-item {
+        max-width: 100%;
+    }
+    .termos-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer-top, .footer-bottom {
+        padding: 16px 4vw;
+        font-size: 13px;
+    }
+    .footer-col-title {
+        font-size: 16px;
+    }
+    .footer-col ul li, .footer-col ul li a, .footer-bottom, .footer-bottom-left, .footer-bottom-right, .footer-bottom-right a, .footer-bottom-right span {
+        font-size: 12px;
+    }
+    .footer-logo-img {
+        width: 48px;
+    }
+    .produtos-header {
+        flex-direction: column;
+        gap: 18px;
+        align-items: flex-start;
+        padding: 0 4vw;
+    }
+    .produtos-titulo {
+        font-size: 1.1rem;
+    }
+    .btn-veja-mais {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 0.95rem;
+    }
+}

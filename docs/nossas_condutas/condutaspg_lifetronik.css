@@ -1,0 +1,421 @@
+/* ===== BASE ===== */
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* ===== HEADER PADRÃO ===== */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6vw;
+    width: 100%;
+    background-color: #F3F3F3;
+    box-sizing: border-box;
+    gap: 32px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container .logo {
+    max-height: 48px;
+    cursor: pointer;
+    background: none;
+    border-radius: 0;
+    display: block;
+}
+
+.nav-container .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 32px;
+}
+
+.nav-container .nav-list li {
+    margin: 0;
+}
+
+.nav-container .nav-list li a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+    background: none;
+    padding: 4px 0;
+    display: inline-block;
+}
+
+.nav-container .nav-list li a:hover,
+.nav-container .nav-list li a[style*="color:#b8312b"] {
+    color: #b8312b !important;
+    font-weight: 600;
+}
+
+/* ===== CONDUTAS SECTION ===== */
+.condutas-section {
+    background: #fff;
+    padding: 60px 0;
+}
+
+.condutas-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.condutas-chapeu {
+    font-size: 18px;
+    color: #b8312b;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.condutas-titulo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 8px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.condutas-descricao {
+    font-size: 16px;
+    color: #222;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 16px;
+}
+
+/* ===== CONDUTA ITEM ===== */
+.conduta-item {
+    background: #f8f8f8;
+    border-left: 6px solid #b8312b;
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 12px rgba(184,49,43,0.06);
+    width: 100%;
+    transition: box-shadow 0.2s;
+}
+
+.conduta-item:hover {
+    box-shadow: 0 4px 24px rgba(184,49,43,0.12);
+}
+
+.conduta-item h3 {
+    margin: 0 0 8px 0;
+    font-size: 22px;
+    color: #b8312b;
+    font-weight: 600;
+}
+
+.conduta-item p {
+    margin: 0 0 12px 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.conduta-item a {
+    display: inline-block;
+    background: #b8312b;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 28px;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background 0.3s;
+}
+
+.conduta-item a:hover {
+    background: #8A1F1A;
+}
+
+/* ===== FOOTER PADRÃO ===== */
+.footer {
+    font-family: 'Raleway', Arial, sans-serif;
+    margin-top: 40px;
+    background: #818283;
+    padding: 0;
+}
+
+.footer-top {
+    display: flex;
+    align-items: flex-start;
+    background: #818283;
+    color: #fff;
+    padding: 40px 5vw 30px 5vw;
+    gap: 16px;
+}
+
+.footer-logo-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 40px;
+    height: 100%;
+}
+
+.footer-logo-img {
+    width: 240px;
+    height: auto;
+    margin-bottom: 0;
+    background: none;
+    border-radius: 0;
+    display: block;
+}
+
+.footer-columns {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    gap: 16px;
+    width: 100%;
+}
+
+.footer-col {
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-col-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    font-size: 15px;
+    margin-bottom: 6px;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.footer-col ul li a:hover {
+    color: #b8312b;
+}
+
+.footer-social {
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.footer-bottom {
+    background: #282728;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 5vw;
+    font-size: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom-left,
+.footer-bottom-right,
+.footer-bottom-right a,
+.footer-bottom-right span {
+    font-size: 15px;
+    color: #fff !important;
+}
+
+/* ===== NOVA SEÇÃO CONDUTAS ===== */
+.condutas-novas-section {
+    background: #fff;
+    color: #000;
+    width: 100%;
+    padding: 0 0 60px 0;
+    margin: 0;
+}
+
+.condutas-novas-img-topo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: #fff;
+    padding-top: 32px;
+}
+
+.condutas-novas-img-topo img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.condutas-novas-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.condutas-novas-chapeu {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000;
+    border-left: 4px solid #000;
+    padding-left: 12px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.condutas-novas-titulo {
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #000;
+}
+
+.condutas-novas-descricao {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    color: #000;
+}
+
+.condutas-novas-cards {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 32px;
+}
+
+.condutas-novas-card {
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 14px;
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 220px;
+    max-width: 260px;
+    transition: box-shadow .2s, transform .2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.condutas-novas-card:hover {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    transform: translateY(-4px) scale(1.03);
+}
+
+.condutas-novas-card-icone {
+    margin-bottom: 18px;
+}
+
+.condutas-novas-card-titulo {
+    font-size: 1.13rem;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+
+/* Responsivo */
+@media (max-width: 700px) {
+    .condutas-novas-container {
+        padding: 18px 4vw 0 4vw;
+    }
+    .condutas-novas-titulo {
+        font-size: 1.3rem;
+    }
+    .condutas-novas-card {
+        min-width: 140px;
+        max-width: 100%;
+        padding: 18px 10px;
+    }
+    .condutas-novas-cards {
+        gap: 12px;
+        justify-content: center;
+    }
+    .condutas-novas-img-topo img {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+    .footer-columns {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    .footer-col {
+        min-width: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .condutas-container {
+        padding: 0 3vw;
+    }
+    .conduta-item {
+        padding: 18px 12px;
+    }
+    .condutas-titulo {
+        font-size: 24px;
+    }
+    .footer-top, .footer-bottom {
+        padding: 16px 4vw;
+        font-size: 13px;
+    }
+    .footer-col-title {
+        font-size: 16px;
+    }
+    .footer-col ul li, .footer-col ul li a, .footer-bottom, .footer-bottom-left, .footer-bottom-right, .footer-bottom-right a, .footer-bottom-right span {
+        font-size: 12px;
+    }
+    .footer-logo-img {
+        width: 48px;
+    }
+}
