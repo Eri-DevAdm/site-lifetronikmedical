@@ -344,6 +344,11 @@ body {
     margin-bottom: 16px;
 }
 
+.contato-descricao a {
+    color: #000 !important;
+    text-decoration: none;
+}
+
 /* ===== FOOTER ===== */
 .footer {
     font-family: 'Raleway', Arial, sans-serif;
