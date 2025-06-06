@@ -1,41 +1,75 @@
-/* Importa estilos do header/footer */
-@import url("index.html/iniciopg_lifetronik.css");
+/* ===== BASE ===== */
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-/* ===== FALE CONOSCO ===== */
+/* ===== HEADER ===== */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6vw 18px 6vw;
+    width: 100%;
+    background-color: #F3F3F3;
+    gap: 32px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container .logo {
+    max-height: 48px;
+    cursor: pointer;
+    background: none;
+    border-radius: 0;
+    display: block;
+}
+
+.nav-container .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 32px;
+}
+
+.nav-container .nav-list li {
+    margin: 0;
+}
+
+.nav-container .nav-list li a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+    background: none;
+    padding: 4px 0;
+    display: inline-block;
+}
+
+.nav-container .nav-list li a:hover {
+    color: #b8312b;
+}
+
+/* ===== FALE CONOSCO (MAIN) ===== */
 .fale-conosco {
     background: #fff;
-    padding: 60px 0;
-    font-family: 'Raleway', Arial, sans-serif;
+    padding: 56px 0;
 }
 
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 6vw;
-}
-
-.fale-conosco-chapeu {
-    font-size: 18px;
-    color: #b8312b;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-.fale-conosco-titulo {
-    font-size: 32px;
-    font-weight: bold;
-    color: #000;
-    margin: 0 0 8px 0;
-    font-family: 'Raleway', sans-serif;
-}
-
-.fale-conosco-descricao {
-    font-size: 18px;
-    color: #222;
-    font-family: 'Raleway', sans-serif;
-    margin-bottom: 16px;
 }
 
 .fale-conosco-container {
@@ -47,7 +81,7 @@
     margin-top: 32px;
 }
 
-/* Agrupa chapéu, título e descrição para alinhar ao lado do formulário */
+/* Coluna esquerda: Informações */
 .fale-conosco-info {
     flex: 1.2 1 0;
     min-width: 260px;
@@ -59,12 +93,33 @@
 .fale-conosco-info-topo {
     display: flex;
     flex-direction: column;
-    margin-bottom: 12px; /* Espaço menor abaixo do topo */
+    margin-bottom: 12px;
+}
+
+.fale-conosco-chapeu {
+    font-size: 18px;
+    color: #b8312b;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.fale-conosco-titulo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 8px 0;
+}
+
+.fale-conosco-descricao {
+    font-size: 17px;
+    color: #222;
+    margin-bottom: 16px;
 }
 
 .fale-conosco-unidades,
 .fale-conosco-redes {
-    margin-bottom: 10px; /* Espaço menor entre seções */
+    margin-bottom: 10px;
     background: none;
     border-radius: 0;
     padding: 0;
@@ -72,11 +127,10 @@
 }
 
 .fale-conosco-subtitulo {
-    font-size: 17px;
+    font-size: 16px;
     color: #b8312b;
     font-weight: 600;
     margin-bottom: 12px;
-    font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -113,8 +167,9 @@
     transform: scale(1.08);
 }
 
+/* Coluna direita: Formulário */
 .fale-conosco-form {
-    flex: 1 1 320px;
+    flex: 1 1 340px;
     min-width: 320px;
     background: #f4f4f4;
     padding: 32px 24px;
@@ -173,7 +228,117 @@
     background-color: #8A1F1A;
 }
 
-/* Responsivo */
+/* ===== FOOTER ===== */
+.footer {
+    font-family: 'Raleway', Arial, sans-serif;
+    margin-top: 40px;
+    background: #818283;
+    padding: 0;
+}
+
+.footer-top {
+    display: flex;
+    align-items: flex-start;
+    background: #818283;
+    color: #fff;
+    padding: 40px 5vw 30px 5vw;
+}
+
+.footer-logo-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 40px;
+    height: 100%;
+}
+
+.footer-logo-img {
+    width: 240px;
+    height: auto;
+    margin-bottom: 0;
+    background: none;
+    border-radius: 0;
+    display: block;
+}
+
+.footer-columns {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.footer-col {
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.footer-social {
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.footer-bottom {
+    background: #282728;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 5vw;
+    font-size: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom-left,
+.footer-bottom-right,
+.footer-bottom-right a,
+.footer-bottom-right span {
+    font-size: 15px;
+    color: #fff !important;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 1100px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-columns {
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer-col {
+        min-width: 0;
+    }
+}
+
 @media (max-width: 900px) {
     .fale-conosco-container {
         flex-direction: column;
@@ -188,5 +353,50 @@
     }
     .fale-conosco-info-topo {
         margin-bottom: 0;
+    }
+    .fale-conosco-titulo {
+        font-size: 22px;
+    }
+    .fale-conosco-chapeu {
+        font-size: 14px;
+    }
+    .fale-conosco-descricao {
+        font-size: 15px;
+    }
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-links-group {
+        min-width: 0;
+    }
+    .footer-logo {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    .fale-conosco {
+        padding: 24px 0;
+    }
+    .container {
+        padding: 0 2vw;
+    }
+    .fale-conosco-form {
+        padding: 18px 8px;
+    }
+    .footer-top, .footer-bottom {
+        padding: 16px 4vw;
+        font-size: 13px;
+    }
+    .footer-col-title {
+        font-size: 16px;
+    }
+    .footer-col ul li, .footer-col ul li a, .footer-bottom, .footer-bottom-left, .footer-bottom-right, .footer-bottom-right a, .footer-bottom-right span {
+        font-size: 12px;
+    }
+    .footer-logo-img {
+        width: 48px;
     }
 }
