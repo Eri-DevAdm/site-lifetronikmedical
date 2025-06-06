@@ -40,122 +40,113 @@
 
     <!-- Layout principal -->
     <div class="produtos-layout">
-        <!-- Sidebar de filtros -->
-        <aside class="produtos-sidebar">
-            <div class="filtro-categoria">
-                <button class="filtro-titulo" type="button">
-                    <span class="filtro-icone">+</span> Marcas
-                </button>
-                <div class="filtro-opcoes">
-                    <label><input type="checkbox" name="marca" value="Health Line"> Health Line</label>
-                    <label><input type="checkbox" name="marca" value="Cardinal Health"> Cardinal Health</label>
-                    <label><input type="checkbox" name="marca" value="Biosensors"> Biosensors</label>
-                </div>
-        </aside>
+        <!-- Sidebar de filtros removida -->
 
-        <!-- Conteúdo principal: produtos + botão -->
+        <!-- Conteúdo principal: produtos -->
         <div class="produtos-main-content">
             <main class="produtos-grid">
-                <!-- Ajuste os caminhos das imagens para ficarem relativos à pasta docs -->
+                <!-- Biosensors -->
+                <h3 class="marca-titulo">Biosensors</h3>
                 <div class="produto-card" data-nome="BioFreedom Ultra">
-                    <img src="produtospg_imagenslm/BioFreedom Ultra/Imagem_BioFreedomUltra_FundoBranco.PNG" alt="BioFreedom Ultra" class="produto-img" />
+                    <img src="produtospg_imagenslm/Imagem_BioFreedomUltra_FundoAzul.PNG" alt="BioFreedom Ultra" class="produto-img" />
                 </div>
                 <div class="produto-card" data-nome="BioMatrix Alpha">
-                    <img src="produtospg_imagenslm/BioMatrix Alpha/Imagem_BioMatrixAlpha.PNG" alt="BioMatrix Alpha" class="produto-img" />
-                </div>
-                <div class="produto-card" data-nome="Compressão | Meias Antiembólicas T.E.D.™">
-                    <img src="../produtos/produtospg_imagenslm/Compressão Pneumática/Meias Antiembólicas/Medidas_MeiasAntiembólicas.PNG" alt="Compressão | Meias Antiembólicas T.E.D.™" class="produto-img" />
-                </div>
-                <div class="produto-card" data-nome="Compressão | Smart Compression™">
-                    <img src="imagens_produtos/smart-compression.jpg" alt="Compressão | Smart Compression™" class="produto-img" />
-                </div>
-                <div class="produto-card" data-nome="Cuidado avançado de feridas | Coberturas de Alginato de Cálcio Kendall™">
-                    <img src="imagens_produtos/alginate-kendall.jpg" alt="Coberturas de Alginato de Cálcio Kendall™" class="produto-img" />
-                </div>
-                <div class="produto-card" data-nome="Cuidado avançado de feridas | Coberturas antimicrobianos AMD | Coberturas Telfa™ AMD">
-                    <img src="imagens_produtos/telfa-amd.jpg" alt="Coberturas Telfa™ AMD" class="produto-img" />
-                </div>
-                <div class="produto-card" data-nome="Cuidado avançado de feridas | Coberturas antimicrobianos AMD | Esponjas AMD Excilon™">
-                    <img src="imagens_produtos/esponjas-excilon.jpg" alt="Esponjas AMD Excilon™" class="produto-img" />
+                    <img src="produtospg_imagenslm/Imagem_BioMatrixAlpha.PNG" alt="BioMatrix Alpha" class="produto-img" />
                 </div>
                 <div class="produto-card" data-nome="Powerline">
-                    <img src="imagens_produtos/powerline.jpg" alt="Powerline" class="produto-img" />
+                    <img src="produtospg_imagenslm/Imagem_Powerline_FundoVerde.png" alt="Powerline" class="produto-img" />
                 </div>
                 <div class="produto-card" data-nome="Rise NC">
-                    <img src="imagens_produtos/rise-nc.jpg" alt="Rise NC" class="produto-img" />
+                    <img src="produtospg_imagenslm/Imagem_RiseNC_FundoVerde.jpg" alt="Rise NC" class="produto-img" />
                 </div>
+
+                <!-- Health Line -->
+                <h3 class="marca-titulo">Health Line</h3>
                 <div class="produto-card" data-nome="Synergy CT PICC">
-                    <img src="imagens_produtos/synergy-ct-picc.jpg" alt="Synergy CT PICC" class="produto-img" />
+                    <img src="produtospg_imagenslm/Imagem_Synergy_CT.PNG" alt="Synergy CT PICC" class="produto-img" />
                 </div>
                 <div class="produto-card" data-nome="Synergy PICC Bantam 1.9Fr">
-                    <img src="imagens_produtos/synergy-bantam.jpg" alt="Synergy PICC Bantam 1.9Fr" class="produto-img" />
+                    <img src="produtospg_imagenslm/Imagem_Synergy_Bantam.PNG" alt="Synergy PICC Bantam 1.9Fr" class="produto-img" />
                 </div>
                 <div class="produto-card" data-nome="Synergy-XS CT PICC">
-                    <img src="imagens_produtos/synergy-xs-ct-picc.jpg" alt="Synergy-XS CT PICC" class="produto-img" />
+                    <img src="produtospg_imagenslm/Imagem_Synergy_XS.PNG" alt="Synergy-XS CT PICC" class="produto-img" />
                 </div>
-                <!-- Produtos extras escondidos inicialmente -->
-                <div class="produto-card hidden" data-nome="Alimentação enteral | Kangaroo™ ePump e equipos de alimentação enteral">
-                    <img src="imagens_produtos/kangaroo-epump.jpg" alt="Kangaroo™ ePump e equipos de alimentação enteral" class="produto-img" />
+
+                <!-- Cardinal Health -->
+                <h3 class="marca-titulo">Cardinal Health</h3>
+                <div class="produto-card" data-nome="Compressão | Meias Antiembólicas T.E.D.™">
+                    <img src="produtospg_imagenslm/meias_antiembolicas_ted.png" alt="Compressão | Meias Antiembólicas T.E.D.™" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="Alimentação enteral | Produtos de acesso enteral">
-                    <img src="imagens_produtos/acesso-enteral.jpg" alt="Produtos de acesso enteral" class="produto-img" />
+                <div class="produto-card" data-nome="Compressão | Smart Compression™">
+                    <img src="produtospg_imagenslm/smart-compression_kendall-SCD-700.PNG" alt="Compressão | Smart Compression™" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="Alimentação enteral | Sistema de conexão ENFit®">
-                    <img src="imagens_produtos/enfit.jpg" alt="Sistema de conexão ENFit®" class="produto-img" />
+                <div class="produto-card" data-nome="Cuidado avançado de feridas | Coberturas de Alginato de Cálcio Kendall™">
+                    <img src="produtospg_imagenslm/coberturas-alginato-calcio_kendall.PNG" alt="Coberturas de Alginato de Cálcio Kendall™" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="Alimentação enteral | Sondas de alimentação Kangaroo™ para pacientes pediátricos e neonatos">
-                    <img src="imagens_produtos/sonda-kangaroo-pediatrico.jpg" alt="Sondas de alimentação Kangaroo™ para pacientes pediátricos e neonatos" class="produto-img" />
+                <div class="produto-card" data-nome="Cuidado avançado de feridas | Coberturas antimicrobianos AMD | Coberturas Telfa™ AMD">
+                    <img src="produtospg_imagenslm/coberturas_telfa_AMD.PNG" alt="Coberturas Telfa™ AMD" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="Alimentação enteral | Sondas de alimentação nasogástrica para adultos">
-                    <img src="imagens_produtos/sonda-nasogastrica-adulto.jpg" alt="Sondas de alimentação nasogástrica para adultos" class="produto-img" />
+                <div class="produto-card" data-nome="Cuidado avançado de feridas | Coberturas antimicrobianos AMD | Esponjas AMD Excilon™">
+                    <img src="produtospg_imagenslm/esponjas_AMD_exilon.PNG" alt="Esponjas AMD Excilon™" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="Cuidado avançado de feridas | Coberturas antimicrobianos AMD | Rolos de Bandagem de Gaze Antimicrobiana Kerlix™ AMD">
-                    <img src="imagens_produtos/kerlix-amd.jpg" alt="Rolos de Bandagem de Gaze Antimicrobiana Kerlix™ AMD" class="produto-img" />
+                <div class="produto-card" data-nome="Alimentação enteral | Kangaroo™ ePump e equipos de alimentação enteral">
+                    <img src="produtospg_imagenslm/Kangaroo_ePump_equipos_alimentacao_enteral.PNG" alt="Kangaroo™ ePump e equipos de alimentação enteral" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="Cuidado avançado de feridas | Coberturas de espuma antimicrobiana AMD | Coberturas de Borda de Espuma Antimicrobiana AMD Kendall™">
-                    <img src="imagens_produtos/borda-espuma-kendall.jpg" alt="Coberturas de Borda de Espuma Antimicrobiana AMD Kendall™" class="produto-img" />
+                <div class="produto-card" data-nome="Alimentação enteral | Produtos de acesso enteral">
+                    <img src="produtospg_imagenslm/Monoject_seringas_orais_enterais_acessorios.PNG" alt="Produtos de acesso enteral" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="Cuidado avançado de feridas | Coberturas de espuma antimicrobiana AMD | Coberturas de Espuma Antimicrobiana AMD Kendall™">
-                    <img src="imagens_produtos/espuma-kendall.jpg" alt="Coberturas de Espuma Antimicrobiana AMD Kendall™" class="produto-img" />
+                <div class="produto-card" data-nome="Alimentação enteral | Sistema de conexão ENFit®">
+                    <img src="produtospg_imagenslm/Kangaroo_ePump_equipos_alimentacao_enteral.PNG" alt="Sistema de conexão ENFit®" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="Cuidado avançado de feridas | Coberturas de espuma antimicrobiana AMD | Espuma AMD em Disco Kendall™">
-                    <img src="imagens_produtos/espuma-disco-kendall.jpg" alt="Espuma AMD em Disco Kendall™" class="produto-img" />
+                <div class="produto-card" data-nome="Alimentação enteral | Sondas de alimentação Kangaroo™ para pacientes pediátricos e neonatos">
+                    <img src="produtospg_imagenslm/sonda_kangaroo_pediatrico.png" alt="Sondas de alimentação Kangaroo™ para pacientes pediátricos e neonatos" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="Cuidado avançado de feridas | Filme transparente Kendall™">
-                    <img src="imagens_produtos/filme-transparente-kendall.jpg" alt="Filme transparente Kendall™" class="produto-img" />
+                <div class="produto-card" data-nome="Alimentação enteral | Sondas de alimentação nasogástrica para adultos">
+                    <img src="produtospg_imagenslm/sonda-nasogastrica-adulto.jpg" alt="Sondas de alimentação nasogástrica para adultos" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="Cuidado avançado de feridas | Hidrogéis | Coberturas para Feridas de Hidrogel Amorfo Kendall™">
-                    <img src="imagens_produtos/hidrogel-amorfo-kendall.jpg" alt="Coberturas para Feridas de Hidrogel Amorfo Kendall™" class="produto-img" />
+                <div class="produto-card" data-nome="Cuidado avançado de feridas | Coberturas antimicrobianos AMD | Rolos de Bandagem de Gaze Antimicrobiana Kerlix™ AMD">
+                    <img src="produtospg_imagenslm/kerlix-amd.jpg" alt="Rolos de Bandagem de Gaze Antimicrobiana Kerlix™ AMD" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="Cuidado avançado de feridas | Hidrogéis | Coberturas para Feridas de Hidrogel Kendall™">
-                    <img src="imagens_produtos/hidrogel-kendall.jpg" alt="Coberturas para Feridas de Hidrogel Kendall™" class="produto-img" />
+                <div class="produto-card" data-nome="Cuidado avançado de feridas | Coberturas de espuma antimicrobiana AMD | Coberturas de Borda de Espuma Antimicrobiana AMD Kendall™">
+                    <img src="produtospg_imagenslm/borda-espuma-kendall.jpg" alt="Coberturas de Borda de Espuma Antimicrobiana AMD Kendall™" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="Cuidado avançado de feridas | Hidrogéis | Gaze Impregnada com Hidrogel Kendall™">
-                    <img src="imagens_produtos/gaze-hidrogel-kendall.jpg" alt="Gaze Impregnada com Hidrogel Kendall™" class="produto-img" />
+                <div class="produto-card" data-nome="Cuidado avançado de feridas | Coberturas de espuma antimicrobiana AMD | Coberturas de Espuma Antimicrobiana AMD Kendall™">
+                    <img src="produtospg_imagenslm/espuma-kendall.jpg" alt="Coberturas de Espuma Antimicrobiana AMD Kendall™" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="Cuidado avançado de feridas | Hidrogéis | Protetores em hidrogel Kendall™ para auxílio da amamentação">
-                    <img src="imagens_produtos/protetor-hidrogel-kendall.jpg" alt="Protetores em hidrogel Kendall™ para auxílio da amamentação" class="produto-img" />
+                <div class="produto-card" data-nome="Cuidado avançado de feridas | Coberturas de espuma antimicrobiana AMD | Espuma AMD em Disco Kendall™">
+                    <img src="produtospg_imagenslm/espuma-disco-kendall.jpg" alt="Espuma AMD em Disco Kendall™" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="Monoject™ Seringas orais/enterais e acessórios">
-                    <img src="imagens_produtos/monoject.jpg" alt="Monoject™ Seringas orais/enterais e acessórios" class="produto-img" />
+                <div class="produto-card" data-nome="Cuidado avançado de feridas | Filme transparente Kendall™">
+                    <img src="produtospg_imagenslm/filme-transparente-kendall.jpg" alt="Filme transparente Kendall™" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="PICC Argyle™ | Cateter central de inserção periférica para neonatos">
-                    <img src="imagens_produtos/picc-argyle.jpg" alt="PICC Argyle™ | Cateter central de inserção periférica para neonatos" class="produto-img" />
+                <div class="produto-card" data-nome="Cuidado avançado de feridas | Hidrogéis | Coberturas para Feridas de Hidrogel Amorfo Kendall™">
+                    <img src="produtospg_imagenslm/hidrogel-amorfo-kendall.jpg" alt="Coberturas para Feridas de Hidrogel Amorfo Kendall™" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="Sistema de drenagem torácica Aqua-Seal™">
-                    <img src="imagens_produtos/aqua-seal.jpg" alt="Sistema de drenagem torácica Aqua-Seal™" class="produto-img" />
+                <div class="produto-card" data-nome="Cuidado avançado de feridas | Hidrogéis | Coberturas para Feridas de Hidrogel Kendall™">
+                    <img src="produtospg_imagenslm/hidrogel-kendall.jpg" alt="Coberturas para Feridas de Hidrogel Kendall™" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="Tratamento tradicional de feridas | Coberturas não Aderentes Curity™">
-                    <img src="imagens_produtos/curity.jpg" alt="Coberturas não Aderentes Curity™" class="produto-img" />
+                <div class="produto-card" data-nome="Cuidado avançado de feridas | Hidrogéis | Gaze Impregnada com Hidrogel Kendall™">
+                    <img src="produtospg_imagenslm/gaze-hidrogel-kendall.jpg" alt="Gaze Impregnada com Hidrogel Kendall™" class="produto-img" />
                 </div>
-                <div class="produto-card hidden" data-nome="Tratamento tradicional de feridas | Rolos de gaze antimicrobiana Kerlix™ AMD">
-                    <img src="imagens_produtos/kerlix-gaze.jpg" alt="Rolos de gaze antimicrobiana Kerlix™ AMD" class="produto-img" />
+                <div class="produto-card" data-nome="Cuidado avançado de feridas | Hidrogéis | Protetores em hidrogel Kendall™ para auxílio da amamentação">
+                    <img src="produtospg_imagenslm/protetor-hidrogel-kendall.jpg" alt="Protetores em hidrogel Kendall™ para auxílio da amamentação" class="produto-img" />
+                </div>
+                <div class="produto-card" data-nome="Monoject™ Seringas orais/enterais e acessórios">
+                    <img src="produtospg_imagenslm/monoject.jpg" alt="Monoject™ Seringas orais/enterais e acessórios" class="produto-img" />
+                </div>
+                <div class="produto-card" data-nome="PICC Argyle™ | Cateter central de inserção periférica para neonatos">
+                    <img src="produtospg_imagenslm/picc-argyle.jpg" alt="PICC Argyle™ | Cateter central de inserção periférica para neonatos" class="produto-img" />
+                </div>
+                <div class="produto-card" data-nome="Sistema de drenagem torácica Aqua-Seal™">
+                    <img src="produtospg_imagenslm/aqua-seal.jpg" alt="Sistema de drenagem torácica Aqua-Seal™" class="produto-img" />
+                </div>
+                <div class="produto-card" data-nome="Tratamento tradicional de feridas | Coberturas não Aderentes Curity™">
+                    <img src="produtospg_imagenslm/curity.jpg" alt="Coberturas não Aderentes Curity™" class="produto-img" />
+                </div>
+                <div class="produto-card" data-nome="Tratamento tradicional de feridas | Rolos de gaze antimicrobiana Kerlix™ AMD">
+                    <img src="produtospg_imagenslm/kerlix-gaze.jpg" alt="Rolos de gaze antimicrobiana Kerlix™ AMD" class="produto-img" />
                 </div>
             </main>
-            <!-- Botão ver mais centralizado abaixo dos produtos -->
-            <div class="btn-ver-mais-container">
-                <button id="btn-ver-mais" class="btn-ver-mais" type="button" onclick="mostrarMaisProdutos(this)">Ver Mais</button>
-            </div>
         </div>
     </div>
 
