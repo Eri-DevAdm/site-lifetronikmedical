@@ -1,3 +1,11 @@
+/* ===== FONTE ===== */
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway'), url('https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyC0ISg.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* ===== BASE ===== */
 body {
     font-family: 'Raleway', Arial, sans-serif;
