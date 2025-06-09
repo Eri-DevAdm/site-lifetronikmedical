@@ -1,3 +1,11 @@
+/* Fonte personalizada Raleway */
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway'), url('https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyC0ISg.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     font-family: 'Raleway', Arial, sans-serif;
     margin: 0;
@@ -46,7 +54,7 @@ body {
 
 /* ===== SEÇÃO EXPLICATIVA ===== */
 .sobre-produtos-clara {
-    background: #F3F3F3;
+    background: #fff;
     color: #000;
     text-align: center;
     padding: 40px 20px 32px 20px;
@@ -149,45 +157,61 @@ body {
 /* ===== GRID DE PRODUTOS ===== */
 .produtos-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
     justify-items: center;
     align-items: stretch;
     width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
 }
 
-.produto-card {
+.produto-card,
+.produtos-marca > div > .produtos-grid > div {
     background: #fff;
-    border-radius: 18px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.10);
-    padding: 32px 12px 24px 12px;
+    border-radius: 14px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    padding: 18px 8px 12px 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 280px;
+    justify-content: flex-start;
+    min-height: 160px;
     width: 100%;
-    max-width: 260px;
+    max-width: 220px;
     margin: 0 auto;
     transition: box-shadow 0.2s, transform 0.2s;
     border: 1px solid #f0f0f0;
 }
 
-.produto-card:hover {
-    box-shadow: 0 8px 32px rgba(184,49,43,0.18);
-    transform: translateY(-6px) scale(1.04);
+.produto-card:hover,
+.produtos-marca > div > .produtos-grid > div:hover {
+    box-shadow: 0 8px 32px rgba(184,49,43,0.14);
+    transform: translateY(-4px) scale(1.03);
     border-color: #b8312b33;
 }
 
-.produto-img {
-    width: 180px;
-    height: 180px;
+.produto-img,
+.produtos-marca > div > .produtos-grid > div > img {
+    width: 120px !important;
+    height: 120px !important;
     object-fit: contain;
     background: #f8f8f8;
-    border-radius: 14px;
+    border-radius: 10px;
     margin-bottom: 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+}
+
+.produtos-marca h3 {
+    font-size: 0.98rem;
+    color: #b8312b;
+    font-weight: 600;
+    margin: 12px 0 0 0;
+    text-align: center;
+    letter-spacing: 0.2px;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Remove nome do produto */
@@ -361,9 +385,6 @@ body {
     .footer-logo-img {
         width: 120px;
     }
-    .produtos-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media (max-width: 700px) {
@@ -379,31 +400,6 @@ body {
     }
     .footer-logo-img {
         width: 48px;
-    }
-    .produtos-layout {
-        flex-direction: column;
-        gap: 16px;
-        padding: 0 2vw;
-    }
-    .produtos-sidebar {
-        width: 100%;
-        flex-direction: column;
-        padding: 12px 8px;
-        gap: 8px;
-    }
-    .produtos-grid {
-        grid-template-columns: 1fr;
-        gap: 14px;
-    }
-    .produto-card {
-        width: 180px;
-        height: 180px;
-        aspect-ratio: 1/1;
-        padding: 0;
-    }
-    .produto-img {
-        width: 140px;
-        height: 140px;
     }
 }
 
@@ -444,4 +440,221 @@ body {
     margin: 32px 0 8px 0;
     font-weight: bold;
     letter-spacing: 1px;
+}
+
+.produtos-filtro-container {
+    max-width: 1100px;
+    margin: 0 auto 24px auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(184,49,43,0.06);
+    border: 1px solid #ececec;
+}
+
+.produtos-filtro-container label {
+    color: #b8312b;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+}
+
+#filtro-marca {
+    padding: 7px 16px;
+    border-radius: 6px;
+    border: 1.5px solid #b8312b;
+    background: #f3f3f3;
+    color: #b8312b;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: border 0.2s, box-shadow 0.2s;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(184,49,43,0.04);
+}
+
+#filtro-marca:focus {
+    border: 2px solid #b8312b;
+    background: #fff;
+}
+
+#filtro-marca option {
+    color: #b8312b;
+    background: #fff;
+}
+
+/* Produtos grid para melhor visualização */
+.produtos-marca {
+    padding: 40px 0 !important;
+    background: #fff;
+}
+
+.produtos-marca[data-marca="biosensors"] {
+    background: #f9f9f9;
+}
+.produtos-marca[data-marca="healthline"] {
+    background: #f9f9f9;
+}
+
+.produtos-marca > div {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.produtos-marca > div > img {
+    height: 60px;
+    margin-bottom: 24px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.produtos-marca > div > .produtos-grid,
+.produtos-marca > div > .produtos-flex,
+.produtos-marca > div > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: flex-start;
+}
+
+.produtos-marca .produto-card,
+.produtos-marca > div > div > div {
+    flex: 1 1 220px;
+    max-width: 260px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+    padding: 32px 12px 24px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+    margin: 0 auto;
+    transition: box-shadow 0.2s, transform 0.2s;
+    border: 1px solid #f0f0f0;
+}
+
+.produtos-marca .produto-card:hover,
+.produtos-marca > div > div > div:hover {
+    box-shadow: 0 8px 32px rgba(184,49,43,0.18);
+    transform: translateY(-6px) scale(1.04);
+    border-color: #b8312b33;
+}
+
+.produtos-marca img,
+.produtos-marca .produto-img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    background: #f8f8f8;
+    border-radius: 14px;
+    margin-bottom: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.produtos-marca h3 {
+    font-size: 0.98rem;
+    color: #b8312b;
+    font-weight: 600;
+    margin: 12px 0 0 0;
+    text-align: center;
+    letter-spacing: 0.2px;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Esconde os títulos dos produtos por padrão */
+.produtos-grid h3 {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 12px;
+    background: rgba(255,255,255,0.97);
+    color: #b8312b;
+    padding: 10px 8px;
+    border-radius: 0 0 12px 12px;
+    font-size: 1rem;
+    z-index: 2;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin: 0;
+    min-height: unset;
+    display: block;
+    text-align: center;
+}
+
+/* Mostra o título ao passar o mouse no card */
+.produtos-grid > div {
+    position: relative;
+    cursor: pointer;
+}
+
+.produtos-grid > div:hover h3,
+.produtos-grid > div:focus-within h3 {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Responsivo para filtro e grid */
+@media (max-width: 700px) {
+    .produtos-filtro-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        padding: 10px 8px;
+    }
+    .produtos-marca > div > .produtos-grid,
+    .produtos-marca > div > .produtos-flex,
+    .produtos-marca > div > div {
+        gap: 18px;
+    }
+    .produtos-marca .produto-card,
+    .produtos-marca > div > div > div {
+        min-width: 90vw;
+        max-width: 98vw;
+        padding: 18px 4px 12px 4px;
+    }
+    .produtos-marca img,
+    .produtos-marca .produto-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Responsivo para telas médias */
+@media (max-width: 1100px) {
+    .produtos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+}
+
+/* Responsivo para telas pequenas */
+@media (max-width: 700px) {
+    .produtos-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .produto-card,
+    .produtos-marca > div > .produtos-grid > div {
+        max-width: 98vw;
+        min-width: 90vw;
+        padding: 12px 4px 8px 4px;
+    }
+    .produto-img,
+    .produtos-marca > div > .produtos-grid > div > img {
+        width: 70px !important;
+        height: 70px !important;
+    }
 }
