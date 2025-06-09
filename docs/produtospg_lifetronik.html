@@ -39,15 +39,22 @@
     </section>
 
     <!-- FILTRO POR MARCA -->
-    <div class="produtos-filtro-container">
-        <label for="filtro-marca">Filtrar por marca:</label>
-        <select id="filtro-marca">
-            <option value="todos">Todas</option>
-            <option value="biosensors">Biosensors</option>
-            <option value="cardinal">Cardinal Health</option>
-            <option value="healthline">Health Line</option>
-        </select>
-    </div>
+    <nav class="produtos-filtro-navbar">
+        <ul>
+            <li>
+                <button type="button" class="filtro-btn active" data-marca="todos">Todas</button>
+            </li>
+            <li>
+                <button type="button" class="filtro-btn" data-marca="biosensors">Biosensors</button>
+            </li>
+            <li>
+                <button type="button" class="filtro-btn" data-marca="cardinal">Cardinal Health</button>
+            </li>
+            <li>
+                <button type="button" class="filtro-btn" data-marca="healthline">Health Line</button>
+            </li>
+        </ul>
+    </nav>
 
     <!-- TODOS OS PRODUTOS EM ORDEM ALFABÉTICA, SEM LOGOS -->
     <section class="produtos-marca" data-marca="todos" style="padding: 40px 0; background: #fff;">
